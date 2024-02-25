@@ -10,8 +10,8 @@ def perform_task(input_text):
 def home(request):
 	if request.method == 'POST':
 		input_text = request.POST['input']
-		input_text= perform_task.delay(input_text)
-		context = {'output_text':input_text}
+		task_id= perform_task.delay(input_text)
+		context = {'output_text':task_id}
 	else:
 		context = {}
 	return render(request,'home.html',context)
