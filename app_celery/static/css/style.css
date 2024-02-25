@@ -1,0 +1,12 @@
+body{
+    background-color: #e3d5d5;
+    font-family: Arial, sans-serif;
+   
+}
+
+.mycontainer{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-left: 50px;
+}
